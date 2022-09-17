@@ -17,7 +17,7 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
 
-      <h1>HomePage</h1>
+      <h1>Enter comma separated numbers</h1>
       <input type="text" onChange={(e) => setPassed(e.target.value)} />
       <button onClick={() => greet()} type="button">
         greet
