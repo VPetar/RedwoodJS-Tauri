@@ -15,6 +15,25 @@ Aye, let's get into it!
 > **Prerequisites**
 >
 > - Redwood requires [Node.js](https://nodejs.org/en/) (>=14.19.x <=16.x) and [Yarn](https://yarnpkg.com/) (>=1.15)
+>
+> System dependencies:
+> ```
+> sudo apt update
+> sudo apt install libwebkit2gtk-4.0-dev \
+>     build-essential \
+>     curl \
+>     wget \
+>     libssl-dev \
+>     libgtk-3-dev \
+>     libayatana-appindicator3-dev \
+>     librsvg2-dev
+> ```
+>
+> Install Rust:
+> ```
+> curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
+> ```
+> At this point, it's a good call to restart your terminal. :)
 
 Start by installing dependencies:
 
@@ -22,10 +41,9 @@ Start by installing dependencies:
 yarn install
 ```
 
-Then change into that directory and start the development server:
+Then start the development server:
 
 ```
-cd my-redwood-project
 yarn redwood dev
 ```
 
@@ -33,25 +51,6 @@ Your browser should automatically open to http://localhost:8910 where you'll see
 
 HOWEVER, we also use Tauri, which means Rust + Cargo:
 
-System dependencies:
-```
-sudo apt update
-sudo apt install libwebkit2gtk-4.0-dev \
-    build-essential \
-    curl \
-    wget \
-    libssl-dev \
-    libgtk-3-dev \
-    libayatana-appindicator3-dev \
-    librsvg2-dev
-```
-
-Install Rust:
-```
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-```
-
-At this point, it's a good call to restart your terminal. :)
 
 To run Tauri and RW, run:
 ```
